@@ -1,0 +1,10 @@
+# Terragrunt cache and generated files
+.terragrunt-cache/
+terraform.tfvars.json
+
+
+# Local Terraform/Terragrunt state files
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
