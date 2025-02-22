@@ -26,6 +26,14 @@ variable "cluster_endpoint_public_access" {
   type = bool
 }
 
+variable "cluster_endpoint_private_access" {
+  type = bool
+}
+
+# variable "cluster_endpoint_public_access_cidrs" {
+#   type = list(string)
+# }
+
 variable "enable_cluster_creator_admin_permissions" {
   type = bool
 }

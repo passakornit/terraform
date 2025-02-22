@@ -13,6 +13,18 @@ output "public_subnets" {
 output "private_route_table_ids" {
   value = module.vpc.private_route_table_ids
 }
-output "public_route_table_ids" {
-  value = aws_route_table.public[*].id
+
+output "security_group_id" {
+  description = "The ID of the RDS security group"
+  value       = aws_security_group.sg_rds.id
+}
+
+output "database_subnet_group" {
+  description = "ID of database subnet group"
+  value       = module.vpc.database_subnet_group
+}
+
+output "database_subnet_group_name" {
+  description = "Name of database subnet group"
+  value       = module.vpc.database_subnet_group_name
 }
