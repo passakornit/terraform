@@ -14,7 +14,7 @@ This repository demonstrates best practices for managing AWS infrastructure usin
 - **Terragrunt**: v0.72.5 or higher  
   ([Terragrunt Docs](https://terragrunt.gruntwork.io/docs/))
 - **AWS CLI**: Configured with proper [AWS credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
-- **kubectl**: [kuberntes](https://kubernetes.io/docs/tasks/tools/)
+- **kubectl**: [kubernetes](https://kubernetes.io/docs/tasks/tools/)
 ## Getting Started
 
 ### 1.Clone the Repository
