@@ -19,10 +19,12 @@ This repository demonstrates best practices for managing AWS infrastructure usin
 
 ### 1.Clone the Repository
 git clone https://github.com/passakornit/terraform.git
+
 cd terraform
 
 ### 2.Configure AWS Credentials:
 Ensure your AWS credentials are configured:
+
 aws configure
 
 ### 3.Update Terragrunt Configuration:
@@ -31,13 +33,17 @@ Modify the terragrunt.hcl file to specify your remote state backend (e.g., S3 bu
 ### 4.Initialize and Deploy
 Each environment has its own terragrunt.hcl file in the environments/ directory. Update these files with your specific values (e.g., AWS region, VPC IDs, resource names).
 Navigate to your environment (e.g., dev/live):
+
 cd live/dev/vpc
+
 terragrunt init
 
 To preview the changes:
+
 terragrunt plan
 
 To deploy the infrastructure:
+
 terragrunt apply
 
 #### VPC Module
